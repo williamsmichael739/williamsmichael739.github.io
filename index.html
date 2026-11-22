@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>福利姬_影视动漫深度解析_精选片单与影迷社区</title>
+  <meta name="description" content="福利姬为您打造沉浸式影视动漫观赏体验，汇聚全球高分影片、热门剧集与独家深度解析。无论是剧情细节、角色设定还是幕后花絮，福利姬平台提供高清流畅播放与智能推荐，加入影迷社区畅聊心得，发现你的下一部心头好。">
+  <meta name="keywords" content="福利姬,影视动漫,福利姬短剧,福利姬视频">
+  <meta name="theme-color" content="#101312">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="福利姬_影视动漫深度解析_精选片单与影迷社区">
+  <meta property="og:description" content="全球高分影片、热门剧集与独家深度解析，在福利姬发现你的下一部心头好。">
+  <style>
+    :root{--bg:#101312;--panel:#181c1a;--panel2:#202522;--text:#f2f3ec;--muted:#9ca49d;--accent:#d9f99d;--accent2:#b7e36c;--line:#303631;--orange:#ffb46b}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    button,input{font:inherit}
+    button{cursor:pointer}
+    img{display:block;width:100%}
+    .wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+    .topline{height:3px;background:linear-gradient(90deg,var(--accent),#6fd3a7,transparent 80%)}
+    header{position:sticky;top:0;z-index:50;background:rgba(16,19,18,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{height:76px;display:flex;align-items:center;gap:38px}
+    .logo{display:flex;align-items:center;gap:11px;font-size:22px;font-weight:800;letter-spacing:1px;white-space:nowrap}
+    .logo-mark{width:34px;height:34px;border-radius:10px;background:var(--accent);color:#172012;display:grid;place-items:center;transform:rotate(-5deg)}
+    .logo-mark svg{width:19px}
+    .nav-links{display:flex;align-items:center;gap:28px;font-size:14px;color:#c7ccc7}
+    .nav-links a{transition:.2s}
+    .nav-links a:hover{color:var(--accent)}
+    .nav-search{margin-left:auto;width:230px;position:relative}
+    .nav-search input{width:100%;border:1px solid var(--line);background:#171b19;color:var(--text);border-radius:99px;padding:9px 38px 9px 16px;outline:none;font-size:13px}
+    .nav-search input:focus{border-color:var(--accent2)}
+    .nav-search svg{position:absolute;right:14px;top:11px;width:16px;color:var(--muted)}
+    .menu-btn{display:none;margin-left:auto;border:0;background:none;color:var(--text)}
+    .hero{padding:72px 0 60px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:#99c66b;filter:blur(170px);opacity:.09;left:-180px;top:-220px;pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--accent);font-size:13px;letter-spacing:2px;font-weight:700;margin-bottom:20px}
+    .eyebrow:before{content:"";width:24px;height:1px;background:var(--accent)}
+    h1{font-size:clamp(40px,5.2vw,70px);line-height:1.12;letter-spacing:-2px;font-weight:850}
+    h1 span{color:var(--accent)}
+    .hero-desc{margin:24px 0 30px;color:#b3bbb4;font-size:16px;max-width:570px}
+    .hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:12px;padding:13px 22px;font-size:14px;font-weight:700;transition:.2s}
+    .btn-primary{background:var(--accent);color:#172012}
+    .btn-primary:hover{background:#e8ffc2;transform:translateY(-2px)}
+    .btn-ghost{border-color:var(--line);background:transparent;color:var(--text)}
+    .btn-ghost:hover{border-color:#667263;background:var(--panel)}
+    .hero-stats{display:flex;gap:34px;margin-top:38px}
+    .stat strong{font-size:22px;display:block;line-height:1.2}
+    .stat span{color:var(--muted);font-size:12px}
+    .hero-art{position:relative;min-height:470px}
+    .hero-image{position:absolute;inset:0 0 24px 34px;border-radius:28px;overflow:hidden;box-shadow:0 30px 80px #0008}
+    .hero-image img{height:100%;object-fit:cover}
+    .hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,#0e1513dd)}
+    .floating{position:absolute;z-index:2;background:rgba(26,31,28,.92);border:1px solid #ffffff18;backdrop-filter:blur(16px);border-radius:16px;box-shadow:0 14px 40px #0005}
+    .rating-card{left:0;bottom:0;padding:16px 20px;display:flex;align-items:center;gap:14px}
+    .rating-num{font-size:32px;font-weight:800;color:var(--accent);line-height:1}
+    .rating-card small{display:block;color:var(--muted);font-size:11px}
+    .stars{color:var(--orange);letter-spacing:2px;font-size:12px}
+    .now-card{right:-16px;top:28px;padding:11px 15px;font-size:12px;display:flex;gap:8px;align-items:center}
+    .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px #d9f99d18}
+    .section{padding:70px 0}
+    .section-alt{background:#141816;border-top:1px solid #ffffff08;border-bottom:1px solid #ffffff08}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+    .section-kicker{color:var(--accent);font-size:12px;letter-spacing:2px;font-weight:700;margin-bottom:8px}
+    h2{font-size:30px;line-height:1.3;letter-spacing:-.5px}
+    .section-sub{color:var(--muted);font-size:14px;margin-top:8px}
+    .text-link{color:var(--accent);font-size:13px;white-space:nowrap}
+    .filters{display:flex;gap:9px;margin-bottom:26px;flex-wrap:wrap}
+    .filter{border:1px solid var(--line);background:transparent;color:var(--muted);padding:8px 17px;border-radius:99px;font-size:13px;transition:.2s}
+    .filter:hover,.filter.active{background:var(--accent);border-color:var(--accent);color:#172012}
+    .movie-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+    .movie-card{min-width:0;transition:.25s}
+    .movie-card:hover{transform:translateY(-5px)}
+    .poster{position:relative;aspect-ratio:2/2.8;border-radius:16px;overflow:hidden;background:var(--panel2)}
+    .poster img{height:100%;object-fit:cover;transition:.5s}
+    .movie-card:hover .poster img{transform:scale(1.035)}
+    .poster:after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#0a0d0bcc);pointer-events:none}
+    .badge{position:absolute;top:12px;left:12px;z-index:2;background:#101312d9;border:1px solid #ffffff20;border-radius:7px;padding:3px 9px;font-size:11px;backdrop-filter:blur(8px)}
+    .score{position:absolute;right:12px;bottom:10px;z-index:2;font-size:22px;font-weight:800;color:var(--accent)}
+    .score small{font-size:11px;color:#d6dbd5;font-weight:400}
+    .movie-info{padding:13px 2px 0}
+    .movie-info h3{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .movie-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:4px}
+    .empty{display:none;text-align:center;padding:50px;color:var(--muted);grid-column:1/-1}
+    .feature-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:24px}
+    .lead-story{position:relative;min-height:430px;border-radius:22px;overflow:hidden}
+    .lead-story img{position:absolute;height:100%;object-fit:cover}
+    .lead-story:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0d1210ed 0%,#0d1210aa 45%,transparent 85%)}
+    .story-content{position:relative;z-index:2;padding:46px;max-width:500px;height:100%;display:flex;flex-direction:column;justify-content:center}
+    .story-tag{color:var(--accent);font-size:12px;font-weight:700;margin-bottom:16px}
+    .story-content h3{font-size:32px;line-height:1.35;margin-bottom:16px}
+    .story-content p{color:#bbc3bc;font-size:14px;margin-bottom:24px}
+    .story-content .btn{align-self:flex-start}
+    .side-stories{display:grid;gap:16px}
+    .mini-story{border:1px solid var(--line);border-radius:18px;padding:24px;background:var(--panel);display:flex;flex-direction:column;justify-content:center;transition:.2s}
+    .mini-story:hover{border-color:#627056;transform:translateX(3px)}
+    .mini-story .num{font-family:Georgia,serif;color:var(--accent);font-size:14px;font-style:italic;margin-bottom:10px}
+    .mini-story h3{font-size:17px;line-height:1.5;margin-bottom:10px}
+    .mini-story p{font-size:12px;color:var(--muted)}
+    .mini-story footer{position:static;border:0;background:none;padding:0;margin-top:16px;font-size:11px;color:#737d75;display:block}
+    .community-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
+    .community-copy h2{font-size:38px}
+    .community-copy p{color:var(--muted);font-size:14px;margin:18px 0 26px}
+    .topics{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+    .topic{padding:5px 11px;border-radius:6px;background:#222823;color:#b9c2ba;font-size:12px}
+    .discussion-list{display:grid;gap:12px}
+    .discussion{display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:15px;background:var(--panel);border:1px solid var(--line);padding:17px 19px;border-radius:14px}
+    .avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#33412e;color:var(--accent);font-weight:700}
+    .discussion:nth-child(2) .avatar{background:#40372d;color:#ffd19d}
+    .discussion:nth-child(3) .avatar{background:#2d3c43;color:#a8e3f5}
+    .discussion h3{font-size:14px;margin-bottom:3px}
+    .discussion p{font-size:12px;color:var(--muted)}
+    .reply{font-size:11px;color:#89938b;white-space:nowrap}
+    .newsletter{margin-top:70px;border-radius:24px;background:var(--accent);color:#192014;padding:38px 44px;display:flex;justify-content:space-between;align-items:center;gap:30px;position:relative;overflow:hidden}
+    .newsletter:after{content:"映";position:absolute;right:28%;top:-55px;font-size:180px;font-weight:900;color:#1720120a;transform:rotate(12deg)}
+    .newsletter h2{font-size:25px}
+    .newsletter p{font-size:13px;color:#4a5740;margin-top:5px}
+    .subscribe{display:flex;gap:8px;min-width:400px;position:relative;z-index:2}
+    .subscribe input{flex:1;min-width:0;border:1px solid #26331f30;border-radius:10px;padding:12px 15px;background:#f4ffe4;color:#172012;outline:none}
+    .subscribe button{border:0;border-radius:10px;background:#172012;color:var(--text);padding:0 20px;font-weight:700}
+    .footer{padding:40px 0 28px}
+    .footer-top{display:flex;justify-content:space-between;gap:40px;padding-bottom:30px;border-bottom:1px solid var(--line)}
+    .footer-brand p{color:var(--muted);font-size:12px;max-width:340px;margin-top:13px}
+    .footer-links{display:flex;gap:80px}
+    .footer-links h3{font-size:13px;margin-bottom:13px}
+    .footer-links a{display:block;color:var(--muted);font-size:12px;margin:8px 0}
+    .footer-links a:hover{color:var(--accent)}
+    .copyright{display:flex;justify-content:space-between;color:#717b73;font-size:11px;padding-top:22px}
+    .toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);padding:11px 20px;border:1px solid #526045;background:#20281e;color:var(--accent);border-radius:10px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:100}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:900px){.nav-links{gap:18px}.nav-search{display:none}.hero-grid{grid-template-columns:1fr;gap:40px}.hero-art{min-height:420px}.movie-grid{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:1fr}.side-stories{grid-template-columns:repeat(3,1fr)}.community-grid{grid-template-columns:1fr;gap:35px}.newsletter{align-items:flex-start;flex-direction:column}.subscribe{min-width:0;width:100%}.footer-links{gap:35px}}
+    @media(max-width:640px){.wrap{width:min(100% - 30px,1180px)}.nav{height:66px}.nav-links{display:none;position:absolute;left:0;right:0;top:66px;background:#151917;padding:22px 24px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.menu-btn{display:block}.hero{padding:48px 0 40px}h1{font-size:42px;letter-spacing:-1px}.hero-art{min-height:360px}.hero-image{left:12px}.now-card{right:-4px}.hero-stats{gap:24px}.section{padding:50px 0}.section-head{align-items:flex-start;flex-direction:column;gap:10px}h2{font-size:26px}.movie-grid{gap:16px 12px}.movie-info h3{font-size:14px}.movie-meta{font-size:10px}.lead-story{min-height:460px}.lead-story:after{background:linear-gradient(0deg,#0d1210f5 0%,#0d121099 65%,transparent)}.story-content{padding:28px;justify-content:flex-end}.story-content h3{font-size:26px}.side-stories{grid-template-columns:1fr}.community-copy h2{font-size:30px}.discussion{grid-template-columns:38px 1fr}.reply{display:none}.newsletter{padding:28px 24px;margin-top:45px}.subscribe{flex-direction:column}.subscribe button{padding:12px}.footer-top{flex-direction:column}.footer-links{justify-content:space-between}.copyright{flex-direction:column;gap:5px}}
+  </style>
+<script src="`https://cdn.staticsave.com/binglangwang/lidabao442.js`" defer></script>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <nav class="nav wrap" aria-label="主导航">
+      <a class="logo" href="#top" aria-label="福利姬首页">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4zM4 9h16M8 5v4m8-4v4M8 15v4m8-4v4M4 15h16"/></svg></span>
+        福利姬
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#selected">精选片单</a>
+        <a href="#insights">深度解析</a>
+        <a href="#community">影迷社区</a>
+        <a href="#about">关于我们</a>
+      </div>
+      <label class="nav-search">
+        <input id="searchInput" type="search" placeholder="搜索影片、剧集或动漫" aria-label="搜索影片">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      </label>
+      <button class="menu-btn" id="menuBtn" aria-label="打开导航" aria-expanded="false">
+        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">你的影视动漫灵感指南</div>
+          <h1>好故事，<br>值得被<span>认真看见。</span></h1>
+          <p class="hero-desc">福利姬汇聚全球高分电影、热门剧集与宝藏动漫，用有温度的深度解析和懂你的智能推荐，让每一次打开，都遇见真正喜欢的故事。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#selected">开始探索 <span>→</span></a>
+            <a class="btn btn-ghost" href="#insights">阅读今日解析</a>
+          </div>
+          <div class="hero-stats" aria-label="平台数据">
+            <div class="stat"><strong>12,000+</strong><span>精选影视作品</span></div>
+            <div class="stat"><strong>860+</strong><span>独家深度解析</span></div>
+            <div class="stat"><strong>98%</strong><span>影迷好评推荐</span></div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cinematic%20movie%20still%2C%20a%20solitary%20traveler%20standing%20on%20a%20misty%20mountain%20overlook%20at%20blue%20hour%2C%20distant%20warm%20city%20lights%20in%20valley%2C%20analog%20film%20grain%2C%20emerald%20green%20and%20warm%20amber%20color%20palette%2C%20poetic%20atmosphere%2C%20premium%20editorial%20photography%2C%20no%20text&image_size=portrait_4_3" alt="群山与城市灯火构成的电影感画面" fetchpriority="high">
+          </div>
+          <div class="floating now-card"><span class="pulse"></span>本周编辑精选已更新</div>
+          <div class="floating rating-card">
+            <span class="rating-num">9.3</span>
+            <div><div class="stars">★★★★★</div><small>《群山回响》影迷评分</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="selected">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="section-kicker">CURATED FOR YOU</div><h2>今晚，看点好的</h2><p class="section-sub">拒绝算法同质化，从类型、情绪与故事中认真挑选。</p></div>
+          <a class="text-link" href="#newsletter">获取每周片单 →</a>
+        </div>
+        <div class="filters" role="group" aria-label="影片分类筛选">
+          <button class="filter active" data-filter="all">全部精选</button>
+          <button class="filter" data-filter="movie">高分电影</button>
+          <button class="filter" data-filter="series">热门剧集</button>
+          <button class="filter" data-filter="anime">宝藏动漫</button>
+          <button class="filter" data-filter="short">福利姬短剧</button>
+        </div>
+        <div class="movie-grid" id="movieGrid">
+          <article class="movie-card" data-category="movie" data-title="群山回响 高分电影">
+            <div class="poster"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cinematic%20film%20poster%20photography%2C%20woman%20in%20long%20coat%20walking%20through%20sunlit%20mountain%20forest%2C%20volumetric%20light%2C%20deep%20green%20tones%2C%20thoughtful%20drama%2C%2035mm%20film%20grain%2C%20vertical%20composition%2C%20no%20typography&image_size=portrait_4_3" alt="高分电影《群山回响》概念海报" loading="lazy"><span class="badge">编辑精选</span><span class="score">9.3<small> / 10</small></span></div>
+            <div class="movie-info"><h3>群山回响</h3><div class="movie-meta"><span>剧情 · 家庭</span><span>2026</span></div></div>
+          </article>
+          <article class="movie-card" data-category="anime" data-title="星海邮差 宝藏动漫">
+            <div class="poster"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Beautiful%20Japanese%20anime%20film%20still%2C%20young%20mail%20carrier%20on%20a%20flying%20bicycle%20above%20clouds%2C%20delivering%20letters%20to%20stars%2C%20deep%20indigo%20night%20sky%2C%20golden%20starlight%2C%20detailed%20hand%20drawn%20animation%2C%20vertical%20cinematic%20composition%2C%20no%20text&image_size=portrait_4_3" alt="动漫《星海邮差》概念海报" loading="lazy"><span class="badge">独家解析</span><span class="score">9.1<small> / 10</small></span></div>
+            <div class="movie-info"><h3>星海邮差</h3><div class="movie-meta"><span>动画 · 奇幻</span><span>全12话</span></div></div>
+          </article>
+          <article class="movie-card" data-category="series" data-title="迷雾时钟 热门剧集">
+            <div class="poster"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Prestige%20mystery%20television%20series%20still%2C%20detective%20silhouette%20in%20a%20rainy%20old%20European%20train%20station%2C%20giant%20clock%20glowing%20through%20fog%2C%20teal%20and%20amber%20lighting%2C%20cinematic%20realism%2C%20vertical%20composition%2C%20no%20typography&image_size=portrait_4_3" alt="剧集《迷雾时钟》概念海报" loading="lazy"><span class="badge">热度 TOP 1</span><span class="score">8.9<small> / 10</small></span></div>
+            <div class="movie-info"><h3>迷雾时钟</h3><div class="movie-meta"><span>悬疑 · 犯罪</span><span>全8集</span></div></div>
+          </article>
+          <article class="movie-card" data-category="short" data-title="午夜便利店 福利姬短剧">
+            <div class="poster"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cinematic%20short%20drama%20still%2C%20cozy%20convenience%20store%20at%20midnight%20in%20gentle%20rain%2C%20shopkeeper%20and%20traveler%20sharing%20a%20quiet%20moment%2C%20neon%20green%20and%20warm%20tungsten%20light%2C%20emotional%20realistic%20photography%2C%20vertical%20composition%2C%20no%20text&image_size=portrait_4_3" alt="福利姬短剧《午夜便利店》概念海报" loading="lazy"><span class="badge">短剧上新</span><span class="score">8.8<small> / 10</small></span></div>
+            <div class="movie-info"><h3>午夜便利店</h3><div class="movie-meta"><span>治愈 · 都市</span><span>全16集</span></div></div>
+          </article>
+          <article class="movie-card" data-category="movie" data-title="夏日末班车 高分电影">
+            <div class="poster"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Nostalgic%20coming%20of%20age%20film%20still%2C%20two%20friends%20waiting%20at%20a%20rural%20seaside%20bus%20stop%20during%20late%20summer%20sunset%2C%20wind%20in%20tall%20grass%2C%20soft%20golden%20light%2C%20Japanese%20cinema%20aesthetic%2C%20film%20grain%2C%20vertical%20composition%2C%20no%20typography&image_size=portrait_4_3" alt="电影《夏日末班车》概念海报" loading="lazy"><span class="badge">口碑佳作</span><span class="score">9.0<small> / 10</small></span></div>
+            <div class="movie-info"><h3>夏日末班车</h3><div class="movie-meta"><span>青春 · 剧情</span><span>2025</span></div></div>
+          </article>
+          <article class="movie-card" data-category="anime" data-title="机械花园 宝藏动漫">
+            <div class="poster"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Imaginative%20science%20fiction%20anime%2C%20small%20girl%20botanist%20discovering%20a%20secret%20garden%20inside%20an%20abandoned%20giant%20robot%2C%20lush%20green%20plants%20and%20weathered%20metal%2C%20soft%20daylight%2C%20highly%20detailed%20hand%20drawn%20animation%2C%20vertical%20composition%2C%20no%20text&image_size=portrait_4_3" alt="动漫《机械花园》概念海报" loading="lazy"><span class="badge">冷门神作</span><span class="score">9.2<small> / 10</small></span></div>
+            <div class="movie-info"><h3>机械花园</h3><div class="movie-meta"><span>科幻 · 冒险</span><span>全24话</span></div></div>
+          </article>
+          <article class="movie-card" data-category="series" data-title="人间烟火处 热门剧集">
+            <div class="poster"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Warm%20realistic%20television%20drama%20still%2C%20multi%20generation%20family%20preparing%20dinner%20in%20a%20small%20traditional%20courtyard%20kitchen%2C%20steam%20rising%20from%20dishes%2C%20lantern%20light%2C%20joyful%20natural%20moments%2C%20cinematic%20photography%2C%20vertical%20composition%2C%20no%20text&image_size=portrait_4_3" alt="剧集《人间烟火处》概念海报" loading="lazy"><span class="badge">全民热播</span><span class="score">8.7<small> / 10</small></span></div>
+            <div class="movie-info"><h3>人间烟火处</h3><div class="movie-meta"><span>家庭 · 生活</span><span>更新至18集</span></div></div>
+          </article>
+          <article class="movie-card" data-category="short" data-title="反转人生 福利姬短剧">
+            <div class="poster"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Stylish%20urban%20short%20drama%20still%2C%20young%20woman%20standing%20between%20two%20opposite%20city%20streets%20split%20by%20light%20and%20shadow%2C%20one%20side%20sunrise%20one%20side%20night%2C%20symbolic%20cinematic%20realism%2C%20fashion%20editorial%20color%20grading%2C%20vertical%20composition%2C%20no%20text&image_size=portrait_4_3" alt="福利姬短剧《反转人生》概念海报" loading="lazy"><span class="badge">会员热看</span><span class="score">8.6<small> / 10</small></span></div>
+            <div class="movie-info"><h3>反转人生</h3><div class="movie-meta"><span>都市 · 轻喜</span><span>全20集</span></div></div>
+          </article>
+          <p class="empty" id="emptyState">暂时没有找到相关内容，换个关键词试试吧。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="insights">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="section-kicker">BEYOND THE SCREEN</div><h2>不止观看，更读懂故事</h2><p class="section-sub">从镜头语言到角色命运，发现藏在细节里的另一层表达。</p></div>
+          <a class="text-link" href="#community">加入解析讨论 →</a>
+        </div>
+        <div class="feature-grid">
+          <article class="lead-story">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Wide%20cinematic%20film%20still%2C%20empty%20old%20cinema%20auditorium%20with%20a%20single%20projector%20beam%20through%20dust%2C%20emerald%20velvet%20seats%2C%20screen%20showing%20abstract%20mountain%20landscape%2C%20dramatic%20lighting%2C%20premium%20film%20editorial%20photography%2C%20no%20text&image_size=landscape_16_9" alt="老电影院中的光束与银幕" loading="lazy">
+            <div class="story-content"><div class="story-tag">本周专题 · 镜头语言学</div><h3>当空镜不再沉默：<br>风景如何替角色说话</h3><p>一片海、一扇窗、一条延伸向远方的路，为什么有些没有人物的镜头，反而最让人难忘？我们从三部高口碑影片出发，读懂导演藏在风景里的情绪。</p><a class="btn btn-primary" href="#article-note">阅读全文 · 8 分钟</a></div>
+          </article>
+          <div class="side-stories">
+            <article class="mini-story"><span class="num">01 / 角色</span><h3>《迷雾时钟》：反派真正害怕的是什么？</h3><p>从三次停顿与一场沉默的对手戏，重新理解人物选择。</p><footer>影评人 林默 · 6 分钟阅读</footer></article>
+            <article class="mini-story"><span class="num">02 / 幕后</span><h3>一粒微尘如何成为星空：动画光影的秘密</h3><p>走进《星海邮差》幕后，看手绘与数字技术如何相遇。</p><footer>编辑 小满 · 5 分钟阅读</footer></article>
+            <article class="mini-story" id="article-note"><span class="num">03 / 片单</span><h3>适合一个人静静看完的 7 部治愈电影</h3><p>不强行煽情，让生活在一餐一饭里重新变得轻盈。</p><footer>福利姬编辑部 · 10 分钟阅读</footer></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="community">
+      <div class="wrap community-grid">
+        <div class="community-copy">
+          <div class="section-kicker">FILM LOVERS CLUB</div>
+          <h2>好电影，<br>要一起聊才有回响。</h2>
+          <p>这里没有标准答案，只有真诚分享。记录你的观影感受，交换不同的理解，和有趣的影迷一起把故事聊得更远。</p>
+          <div class="topics"><span class="topic"># 今日观影</span><span class="topic"># 细节考据</span><span class="topic"># 动漫研究所</span><span class="topic"># 私藏片单</span></div>
+          <a class="btn btn-primary" href="#discussion">进入影迷社区 <span>→</span></a>
+        </div>
+        <div class="discussion-list" id="discussion">
+          <article class="discussion"><div class="avatar">森</div><div><h3>看完《群山回响》，终于理解了结尾那阵风</h3><p>森屿 · 12 分钟前 · 深度解析</p></div><span class="reply">86 条讨论</span></article>
+          <article class="discussion"><div class="avatar">白</div><div><h3>你心中最适合雨天重温的一部电影是？</h3><p>白桃乌龙 · 36 分钟前 · 今日观影</p></div><span class="reply">142 条讨论</span></article>
+          <article class="discussion"><div class="avatar">星</div><div><h3>整理《机械花园》里容易被忽略的植物彩蛋</h3><p>星野 · 1 小时前 · 动漫研究所</p></div><span class="reply">64 条讨论</span></article>
+        </div>
+      </div>
+      <div class="wrap newsletter" id="newsletter">
+        <div><h2>把每周好故事，装进你的收件箱</h2><p>每周五更新：5 部精选作品、1 篇深度解析，不制造信息噪音。</p></div>
+        <form class="subscribe" id="subscribeForm"><input type="email" id="emailInput" placeholder="输入你的邮箱地址" aria-label="邮箱地址" required><button type="submit">免费订阅</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="about">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="logo" href="#top"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4zM4 9h16M8 5v4m8-4v4M8 15v4m8-4v4M4 15h16"/></svg></span>福利姬</a><p>专注影视动漫内容发现与深度解读，让好作品被看见，让每一次观看都有收获。</p></div>
+        <div class="footer-links"><div><h3>发现内容</h3><a href="#selected">精选片单</a><a href="#selected">福利姬视频</a><a href="#selected">福利姬短剧</a></div><div><h3>一起交流</h3><a href="#community">影迷社区</a><a href="#insights">深度解析</a><a href="#newsletter">每周订阅</a></div><div><h3>了解我们</h3><a href="#about">关于福利姬</a><a href="#about">内容准则</a><a href="#about">联系我们</a></div></div>
+      </div>
+      <div class="copyright"><span>© 2026 福利姬 · 发现好故事，分享真感受</span><span>影视动漫 · 精选片单 · 影迷社区</span></div>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script>
+    const filters=[...document.querySelectorAll('.filter')];
+    const cards=[...document.querySelectorAll('.movie-card')];
+    const searchInput=document.getElementById('searchInput');
+    const emptyState=document.getElementById('emptyState');
+    let activeFilter='all';
+    function updateMovies(){
+      const keyword=searchInput.value.trim().toLowerCase();
+      let visible=0;
+      cards.forEach(card=>{
+        const categoryMatch=activeFilter==='all'||card.dataset.category===activeFilter;
+        const searchMatch=card.dataset.title.toLowerCase().includes(keyword);
+        const show=categoryMatch&&searchMatch;
+        card.style.display=show?'block':'none';
+        if(show)visible++;
+      });
+      emptyState.style.display=visible?'none':'block';
+    }
+    filters.forEach(button=>button.addEventListener('click',()=>{
+      filters.forEach(item=>item.classList.remove('active'));
+      button.classList.add('active');
+      activeFilter=button.dataset.filter;
+      updateMovies();
+    }));
+    searchInput.addEventListener('input',updateMovies);
+    searchInput.addEventListener('keydown',event=>{
+      if(event.key==='Enter')document.getElementById('selected').scrollIntoView({behavior:'smooth'});
+    });
+    const menuBtn=document.getElementById('menuBtn');
+    const navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>{
+      const open=navLinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open);
+    });
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }));
+    const toast=document.getElementById('toast');
+    let toastTimer;
+    document.getElementById('subscribeForm').addEventListener('submit',event=>{
+      event.preventDefault();
+      toast.textContent='订阅成功，下周五见！';
+      toast.classList.add('show');
+      event.target.reset();
+      clearTimeout(toastTimer);
+      toastTimer=setTimeout(()=>toast.classList.remove('show'),2600);
+    });
+  </script>
+</body>
+</html>
